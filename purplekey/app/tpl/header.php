@@ -5,7 +5,7 @@
 				<nav class="navbar navbar-expand-lg navbar-light py-0 align-items-center">
 					<a class="navbar-brand p-0" href="#"><img class="img-responsive" src="img/temp/home/logo.png"
 							alt="logo"></a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+					<button class="navbar-toggler mobile-button" type="button" data-toggle="collapse" data-target="#navbarNav"
 						aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>

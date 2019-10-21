@@ -64,9 +64,9 @@ jQuery(function () {
 			el: '.swiper-pagination',
 			clickable: true
 		  },
-		//   autoplay: {
-		// 	delay: 5000,
-		//   }
+		  autoplay: {
+			delay: 5000,
+		  }
 	});
 
 	var serviceSlider2 = new Swiper('.swiper-container-2', {
@@ -75,7 +75,7 @@ jQuery(function () {
 			prevEl: '.swiper-button-prev-expertise',
 			slidesPerView: 1,
 			slidesPerColumn: 1,
-		},
+		}
 		//   autoplay: {
 		// 	delay: 5000,
 		//   }

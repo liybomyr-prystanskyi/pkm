@@ -9538,6 +9538,15 @@ body {
   padding: 0;
 }
 
+.mobile-button {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler:not(:disabled):not(.disabled) {
+  outline: none;
+}
+
 .swiper-button-next-expertise,
 .swiper-button-prev-expertise {
   position: absolute;
@@ -9751,6 +9760,18 @@ body {
   width: 100%;
   height: auto;
   position: relative;
+}
+
+.home-banner__main__swiper__wrapper__item:before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: auto;
+  position: absolute;
+  display: block;
+  min-height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .home-banner__main__swiper__wrapper__item img {
@@ -9975,8 +9996,8 @@ body {
 
 .expertise__main__info__title h2:before {
   content: '';
-  width: 10px;
-  height: 30px;
+  width: 6px;
+  height: 25px;
   background-color: #ffc600;
   position: absolute;
   display: block;
@@ -10287,19 +10308,20 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 30px 0;
 }
 
 .projects-home__main__img-info__container__wrapper__slide__title h2 {
   font-size: 25px;
-  margin: 0 0 30px 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   color: #fff;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .projects-home__main__img-info__container__wrapper__slide__title a {
@@ -10350,6 +10372,7 @@ body {
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   width: 100%;
+  font-size: 18px;
 }
 
 .projects-home__main__img-info__arr-prev {
@@ -10783,14 +10806,26 @@ body {
 }
 
 @media screen and (max-width: 576px) {
-  body {
-    overflow-x: hidden;
+  .row {
+    margin-right: 0;
+    margin-left: 0;
   }
   .header-main nav {
     min-height: auto;
   }
   .header-main nav .navbar-brand img {
     max-width: 80px;
+  }
+  .header-main nav .menu-header ul li {
+    margin-bottom: 15px;
+  }
+  .header-main nav .menu-header .left {
+    margin-bottom: 30px;
+  }
+  .header-main nav .menu-header .left .login-button a {
+    max-width: 150px;
+    min-height: 40px;
+    font-size: 14px;
   }
   .home-banner__main__swiper__wrapper__item img {
     width: 100%;
@@ -10820,7 +10855,7 @@ body {
     min-height: 154px;
   }
   .about-us__main__info {
-    padding: 25px 30px;
+    padding: 30px 15px;
   }
   .about-us__main__info__title {
     margin: 0 0 15px 0;
@@ -10851,7 +10886,7 @@ body {
     min-height: 40px;
   }
   .expertise__main__info {
-    padding: 25px 30px;
+    padding: 30px 15px;
     max-width: 100%;
   }
   .expertise__main__info__title {
@@ -10859,9 +10894,6 @@ body {
   }
   .expertise__main__info__title h2 {
     font-size: 20px;
-  }
-  .expertise__main__info__title h2:before {
-    content: '';
   }
   .expertise__main__info__description p {
     font-size: 14px;
@@ -10877,27 +10909,40 @@ body {
   }
   .expertise__main__image {
     height: auto;
-    padding: 0 30px;
+    padding: 0 0;
   }
   .expertise__main__image img {
     height: 150px;
   }
   .expertise__main__img-info {
-    height: auto;
-    position: relative;
-    background-color: #752a95;
-    max-width: 100%;
-    width: 100%;
-    overflow: hidden;
     top: 0;
-    right: 0;
-    padding: 0 30px;
+    left: 0;
+    max-width: 100%;
+    position: relative;
   }
   .expertise__main__img-info__container__wrapper__slide {
-    padding: 0;
+    padding: 20px 15px 105px 15px;
+  }
+  .expertise__main__img-info__container__wrapper__slide__title h2 {
+    font-size: 16px;
+    margin: 0px 0 15px 0;
+  }
+  .expertise__main__img-info__container__wrapper__slide__description p {
+    font-size: 14px;
+  }
+  .expertise__main__img-info__arr-prev {
+    top: 79%;
+  }
+  .expertise__main__img-info__arr-prev img {
+    width: 30px;
+    height: 20px;
+  }
+  .expertise__main__img-info__arr-next img {
+    width: 30px;
+    height: 20px;
   }
   .projects-home__main__info {
-    padding: 30px 30px;
+    padding: 30px 15px;
   }
   .projects-home__main__info__title {
     margin: 0 0 25px 0;
@@ -10926,7 +10971,6 @@ body {
   }
   .projects-home__main__image {
     height: auto;
-    max-height: 150px;
   }
   .projects-home__main__image img {
     height: auto;
@@ -10940,8 +10984,35 @@ body {
   .projects-home__main__img-info__container__wrapper__slide {
     padding: 20px 15px 105px 15px;
   }
-  .projects-home__main__img-info__container__wrapper__slide__subtitle p:before {
-    content: '';
+  .projects-home__main__img-info__container__wrapper__slide__title {
+    margin: 0 0 10px 0;
+  }
+  .projects-home__main__img-info__container__wrapper__slide__title h2 {
+    font-size: 16px;
+    margin: 0;
+  }
+  .projects-home__main__img-info__container__wrapper__slide__title a {
+    font-size: 16px;
+  }
+  .projects-home__main__img-info__container__wrapper__slide__subtitle p {
+    font-size: 16px;
+  }
+  .projects-home__main__img-info__container__wrapper__slide__description {
+    margin-top: 10px;
+  }
+  .projects-home__main__img-info__container__wrapper__slide__description p {
+    font-size: 14px;
+  }
+  .projects-home__main__img-info__arr-prev {
+    top: 79%;
+  }
+  .projects-home__main__img-info__arr-prev img {
+    width: 30px;
+    height: 20px;
+  }
+  .projects-home__main__img-info__arr-next img {
+    width: 30px;
+    height: 20px;
   }
   .brokers-home {
     padding-bottom: 30px;
@@ -10964,11 +11035,31 @@ body {
     margin-top: 20px;
     top: 0;
   }
+  .brokers-home__main__objects__item {
+    padding: 0 0 30px 0;
+  }
+  .brokers-home__main__objects__item__info {
+    padding: 10px 0 0 0;
+  }
   .brokers-home__main__objects__item__info h3 {
     font-size: 16px;
+    margin: 0 0 5px 10px;
   }
   .brokers-home__main__objects__item__info h3:before {
     content: '';
+    top: 12%;
+  }
+  .brokers-home__main__button {
+    margin: 10px auto 0;
+    max-width: 170px;
+    min-height: 40px;
+  }
+  .brokers-home__main__button a {
+    min-height: 40px;
+    font-size: 14px;
+  }
+  .footer {
+    padding: 30px 0;
   }
   .footer__main__menu ul {
     -webkit-box-orient: vertical;
@@ -10976,8 +11067,895 @@ body {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 0;
+  }
+  .footer__main__menu ul li {
+    padding: 10px 12px;
+  }
+  .footer__main__logo {
+    padding: 30px 0 17px 0;
+  }
+  .footer__main__by a {
+    padding-bottom: 10px;
   }
   .footer__main__by a:last-child {
     padding-bottom: 0;
+  }
+  .request {
+    padding: 30px 0;
+  }
+  .request__main__title {
+    margin-bottom: 25px;
+  }
+  .request__main__title h2 {
+    font-size: 20px;
+    margin: 0 0 30px 0;
+  }
+  .request__main__title h2:before {
+    content: '';
+    top: 35px;
+    min-height: 2px;
+  }
+  .request__main__title p {
+    font-size: 14px;
+  }
+  .request__main__form form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .request__main__form form input {
+    max-width: 100%;
+    margin-right: 0;
+    min-height: 40px;
+    margin-bottom: 15px;
+  }
+  .request__main__form form .request__main__form__button {
+    font-size: 14px;
+    max-width: 200px;
+    min-height: 40px;
+  }
+}
+
+@media screen and (min-width: 576.99px) and (max-width: 768px) {
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .header-main nav {
+    min-height: auto;
+  }
+  .header-main nav .navbar-brand img {
+    max-width: 80px;
+  }
+  .header-main nav .menu-header ul li {
+    margin-bottom: 15px;
+  }
+  .header-main nav .menu-header .left {
+    margin-bottom: 30px;
+  }
+  .header-main nav .menu-header .left .login-button a {
+    max-width: 150px;
+    min-height: 40px;
+    font-size: 14px;
+  }
+  .home-banner__main__swiper__wrapper__item img {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .home-banner__main__info__title h1 {
+    font-size: 16px;
+  }
+  .home-banner__main__info__title h1:before {
+    content: "";
+    top: 30px;
+    height: 2px;
+  }
+  .home-banner__main__info__title p {
+    margin: 30px auto 0;
+  }
+  .about-us__main__image {
+    height: auto;
+  }
+  .about-us__main__image img {
+    width: 100%;
+    height: 300px;
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .about-us__main__info {
+    padding: 50px 15px;
+  }
+  .about-us__main__info__title {
+    margin: 0 0 15px 0;
+  }
+  .about-us__main__info__title h2 {
+    font-size: 20px;
+  }
+  .about-us__main__info__title h2:before {
+    content: '';
+    width: 6px;
+    height: 25px;
+    top: 0;
+  }
+  .about-us__main__info__description p {
+    font-size: 14px;
+    max-width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .about-us__main__info__description p:last-child {
+    margin: 0 0 20px 0;
+  }
+  .about-us__main__info__button {
+    min-height: 40px;
+    max-width: 170px;
+  }
+  .about-us__main__info__button a {
+    font-size: 14px;
+    min-height: 40px;
+  }
+  .expertise__main__info {
+    padding: 50px 15px;
+    max-width: 100%;
+  }
+  .expertise__main__info__title {
+    margin: 0 0 15px 0;
+  }
+  .expertise__main__info__title h2 {
+    font-size: 20px;
+  }
+  .expertise__main__info__description p {
+    font-size: 14px;
+    margin: 0 0 20px 0;
+  }
+  .expertise__main__info__button {
+    min-height: 40px;
+    max-width: 170px;
+  }
+  .expertise__main__info__button a {
+    font-size: 14px;
+    min-height: 40px;
+  }
+  .expertise__main__image {
+    height: auto;
+    padding: 0 0;
+  }
+  .expertise__main__image img {
+    height: 300px;
+  }
+  .expertise__main__img-info {
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    position: relative;
+  }
+  .expertise__main__img-info__container__wrapper__slide {
+    padding: 50px 15px 105px 15px;
+  }
+  .expertise__main__img-info__container__wrapper__slide__title {
+    max-width: 100%;
+  }
+  .expertise__main__img-info__container__wrapper__slide__title h2 {
+    font-size: 16px;
+    margin: 0px 0 15px 0;
+  }
+  .expertise__main__img-info__container__wrapper__slide__description {
+    max-width: 100%;
+  }
+  .expertise__main__img-info__container__wrapper__slide__description p {
+    font-size: 14px;
+  }
+  .expertise__main__img-info__arr-prev {
+    top: 79%;
+  }
+  .expertise__main__img-info__arr-prev img {
+    width: 30px;
+    height: 20px;
+  }
+  .expertise__main__img-info__arr-next img {
+    width: 30px;
+    height: 20px;
+  }
+  .projects-home__main__info {
+    padding: 50px 15px;
+  }
+  .projects-home__main__info__title {
+    margin: 0 0 25px 0;
+  }
+  .projects-home__main__info__title h2 {
+    font-size: 20px;
+  }
+  .projects-home__main__info__title h2:before {
+    content: '';
+    top: 0%;
+    width: 5px;
+    height: 25px;
+  }
+  .projects-home__main__info__description p {
+    font-size: 16px;
+    max-width: 100%;
+    margin: 0 0 20px 0;
+  }
+  .projects-home__main__info__button {
+    min-height: 40px;
+    max-width: 170px;
+  }
+  .projects-home__main__info__button a {
+    min-height: 40px;
+    font-size: 14px;
+  }
+  .projects-home__main__image {
+    height: auto;
+  }
+  .projects-home__main__image img {
+    height: 300px;
+  }
+  .projects-home__main__img-info {
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    position: relative;
+  }
+  .projects-home__main__img-info__container__wrapper__slide {
+    padding: 50px 15px 105px 15px;
+  }
+  .projects-home__main__img-info__container__wrapper__slide__title {
+    margin: 0 0 10px 0;
+  }
+  .projects-home__main__img-info__container__wrapper__slide__title h2 {
+    font-size: 16px;
+    margin: 0;
+  }
+  .projects-home__main__img-info__container__wrapper__slide__title a {
+    font-size: 16px;
+  }
+  .projects-home__main__img-info__container__wrapper__slide__subtitle p {
+    font-size: 16px;
+  }
+  .projects-home__main__img-info__container__wrapper__slide__description {
+    margin-top: 10px;
+  }
+  .projects-home__main__img-info__container__wrapper__slide__description p {
+    font-size: 14px;
+  }
+  .projects-home__main__img-info__arr-prev {
+    top: 79%;
+  }
+  .projects-home__main__img-info__arr-prev img {
+    width: 30px;
+    height: 20px;
+  }
+  .projects-home__main__img-info__arr-next img {
+    width: 30px;
+    height: 20px;
+  }
+  .brokers-home {
+    padding-bottom: 30px;
+  }
+  .brokers-home__main__title-block {
+    padding: 30px 0;
+    max-width: 100%;
+  }
+  .brokers-home__main__title-block__title {
+    margin-left: 0;
+  }
+  .brokers-home__main__title-block__title h2 {
+    font-size: 20px;
+    margin: 0 0 25px 0;
+  }
+  .brokers-home__main__title-block__title p {
+    font-size: 16px;
+  }
+  .brokers-home__main__objects {
+    margin-top: 20px;
+    top: 0;
+  }
+  .brokers-home__main__objects__item {
+    padding: 0 0 30px 0;
+  }
+  .brokers-home__main__objects__item__info {
+    padding: 10px 0 0 0;
+  }
+  .brokers-home__main__objects__item__info h3 {
+    font-size: 16px;
+    margin: 0 0 5px 10px;
+  }
+  .brokers-home__main__objects__item__info h3:before {
+    content: '';
+    top: 12%;
+  }
+  .brokers-home__main__button {
+    margin: 10px auto 0;
+    max-width: 170px;
+    min-height: 40px;
+  }
+  .brokers-home__main__button a {
+    min-height: 40px;
+    font-size: 14px;
+  }
+  .footer {
+    padding: 30px 0;
+  }
+  .footer__main__menu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .footer__main__menu ul li {
+    padding: 10px 12px;
+  }
+  .footer__main__logo {
+    padding: 30px 0 17px 0;
+  }
+  .footer__main__by a {
+    padding-bottom: 10px;
+  }
+  .footer__main__by a:last-child {
+    padding-bottom: 0;
+  }
+  .request {
+    padding: 30px 0;
+  }
+  .request__main__title {
+    margin-bottom: 25px;
+  }
+  .request__main__title h2 {
+    font-size: 20px;
+    margin: 0 0 30px 0;
+  }
+  .request__main__title h2:before {
+    content: '';
+    top: 35px;
+    min-height: 2px;
+  }
+  .request__main__title p {
+    font-size: 14px;
+  }
+  .request__main__form form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .request__main__form form input {
+    max-width: 100%;
+    margin-right: 0;
+    min-height: 40px;
+    margin-bottom: 15px;
+  }
+  .request__main__form form .request__main__form__button {
+    font-size: 14px;
+    max-width: 200px;
+    min-height: 40px;
+  }
+}
+
+@media screen and (min-width: 768.99px) and (max-width: 992px) {
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .header-main nav {
+    min-height: auto;
+  }
+  .header-main nav .navbar-brand img {
+    max-width: 80px;
+  }
+  .header-main nav .menu-header ul li {
+    margin-bottom: 15px;
+  }
+  .header-main nav .menu-header .left {
+    margin-bottom: 30px;
+  }
+  .header-main nav .menu-header .left .login-button a {
+    max-width: 150px;
+    min-height: 40px;
+    font-size: 14px;
+  }
+  .home-banner__main__swiper__wrapper__item img {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .home-banner__main__info__title h1 {
+    font-size: 25px;
+  }
+  .home-banner__main__info__title h1:before {
+    content: "";
+    top: 40px;
+    height: 2px;
+  }
+  .home-banner__main__info__title p {
+    margin: 50px auto 0;
+    font-size: 16px;
+  }
+  .about-us__main__image {
+    height: auto;
+  }
+  .about-us__main__image img {
+    width: 100%;
+    height: 300px;
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .about-us__main__info {
+    padding: 50px 15px;
+  }
+  .about-us__main__info__title {
+    margin: 0 0 15px 0;
+  }
+  .about-us__main__info__title h2 {
+    font-size: 25px;
+  }
+  .about-us__main__info__title h2:before {
+    content: '';
+    width: 6px;
+    height: 25px;
+    top: 0;
+  }
+  .about-us__main__info__description p {
+    font-size: 16px;
+    max-width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .about-us__main__info__description p:last-child {
+    margin: 0 0 20px 0;
+  }
+  .expertise__main__info {
+    padding: 50px 15px;
+    max-width: 100%;
+  }
+  .expertise__main__info__title {
+    margin: 0 0 15px 0;
+  }
+  .expertise__main__info__title h2 {
+    font-size: 25px;
+  }
+  .expertise__main__info__description p {
+    font-size: 16px;
+    margin: 0 0 20px 0;
+    max-width: 100%;
+  }
+  .expertise__main__image {
+    height: auto;
+    padding: 0 0;
+  }
+  .expertise__main__image img {
+    height: 300px;
+  }
+  .expertise__main__img-info {
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    position: relative;
+  }
+  .expertise__main__img-info__container__wrapper__slide {
+    padding: 50px 15px 105px 15px;
+  }
+  .expertise__main__img-info__container__wrapper__slide__title {
+    max-width: 100%;
+  }
+  .expertise__main__img-info__container__wrapper__slide__title h2 {
+    font-size: 20px;
+    margin: 0px 0 15px 0;
+  }
+  .expertise__main__img-info__container__wrapper__slide__description {
+    max-width: 100%;
+  }
+  .expertise__main__img-info__container__wrapper__slide__description p {
+    font-size: 16px;
+  }
+  .expertise__main__img-info__arr-prev {
+    top: 79%;
+  }
+  .expertise__main__img-info__arr-prev img {
+    width: 30px;
+    height: 20px;
+  }
+  .expertise__main__img-info__arr-next img {
+    width: 30px;
+    height: 20px;
+  }
+  .projects-home__main__info {
+    max-width: 100%;
+    padding: 50px 15px;
+  }
+  .projects-home__main__info__title {
+    margin: 0 0 25px 0;
+  }
+  .projects-home__main__info__title h2 {
+    font-size: 25px;
+  }
+  .projects-home__main__info__title h2:before {
+    content: '';
+    top: 0%;
+    width: 5px;
+    height: 25px;
+  }
+  .projects-home__main__info__description p {
+    font-size: 16px;
+    max-width: 100%;
+    margin: 0 0 20px 0;
+  }
+  .projects-home__main__image {
+    height: auto;
+  }
+  .projects-home__main__image img {
+    height: 300px;
+  }
+  .projects-home__main__img-info {
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    position: relative;
+  }
+  .projects-home__main__img-info__container__wrapper__slide {
+    padding: 50px 15px 105px 15px;
+  }
+  .projects-home__main__img-info__container__wrapper__slide__title {
+    margin: 0 0 10px 0;
+  }
+  .projects-home__main__img-info__container__wrapper__slide__title h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+  .projects-home__main__img-info__container__wrapper__slide__title a {
+    font-size: 20px;
+  }
+  .projects-home__main__img-info__container__wrapper__slide__subtitle p {
+    font-size: 18px;
+  }
+  .projects-home__main__img-info__container__wrapper__slide__description {
+    margin-top: 10px;
+  }
+  .projects-home__main__img-info__container__wrapper__slide__description p {
+    font-size: 16px;
+  }
+  .projects-home__main__img-info__arr-prev {
+    top: 79%;
+  }
+  .projects-home__main__img-info__arr-prev img {
+    width: 30px;
+    height: 20px;
+  }
+  .projects-home__main__img-info__arr-next img {
+    width: 30px;
+    height: 20px;
+  }
+  .brokers-home {
+    padding-bottom: 30px;
+  }
+  .brokers-home__main__title-block {
+    padding: 30px 0;
+    max-width: 100%;
+  }
+  .brokers-home__main__title-block__title {
+    margin-left: 0;
+  }
+  .brokers-home__main__title-block__title h2 {
+    font-size: 20px;
+    margin: 0 0 25px 0;
+  }
+  .brokers-home__main__title-block__title p {
+    font-size: 16px;
+  }
+  .brokers-home__main__objects {
+    margin-top: 20px;
+    top: 0;
+  }
+  .brokers-home__main__objects__item {
+    padding: 0 0 30px 0;
+  }
+  .brokers-home__main__objects__item__info {
+    padding: 10px 0 0 0;
+  }
+  .brokers-home__main__objects__item__info h3 {
+    font-size: 16px;
+    margin: 0 0 5px 10px;
+  }
+  .brokers-home__main__objects__item__info h3:before {
+    content: '';
+    top: 12%;
+  }
+  .brokers-home__main__button {
+    margin: 10px auto 0;
+  }
+  .footer {
+    padding: 30px 0;
+  }
+  .footer__main__menu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .footer__main__menu ul li {
+    padding: 10px 12px;
+  }
+  .footer__main__logo {
+    padding: 30px 0 17px 0;
+  }
+  .footer__main__by a {
+    padding-bottom: 10px;
+  }
+  .footer__main__by a:last-child {
+    padding-bottom: 0;
+  }
+  .request {
+    padding: 30px 0;
+  }
+  .request__main__title {
+    margin-bottom: 25px;
+  }
+  .request__main__title h2 {
+    font-size: 25px;
+    margin: 0 0 30px 0;
+  }
+  .request__main__title h2:before {
+    content: '';
+    top: 45px;
+    min-height: 2px;
+  }
+  .request__main__title p {
+    font-size: 16px;
+  }
+  .request__main__form form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .request__main__form form input {
+    max-width: 100%;
+    margin-right: 0;
+    min-height: 40px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 992.99px) and (max-width: 1200px) {
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .header-main nav .navbar-brand img {
+    max-width: 110px;
+  }
+  .header-main nav .menu-header ul li {
+    margin: 0 6px;
+  }
+  .header-main nav .menu-header ul li a {
+    font-size: 14px;
+  }
+  .header-main nav .menu-header .left .login-button {
+    min-width: 140px;
+  }
+  .header-main nav .menu-header .left .login-button a {
+    max-width: 140px;
+    min-height: 40px;
+    font-size: 14px;
+  }
+  .home-banner__main__swiper__wrapper__item img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .home-banner__main__info__title p {
+    margin: 50px auto 0;
+    font-size: 18px;
+  }
+  .about-us__main__image {
+    height: auto;
+  }
+  .about-us__main__image img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .about-us__main__info {
+    padding: 50px 15px;
+    height: 100%;
+  }
+  .about-us__main__info__title {
+    margin: 0 0 15px 0;
+  }
+  .about-us__main__info__title h2 {
+    font-size: 25px;
+  }
+  .about-us__main__info__title h2:before {
+    content: '';
+    width: 6px;
+    height: 25px;
+    top: 0;
+  }
+  .about-us__main__info__description p {
+    font-size: 16px;
+    max-width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .about-us__main__info__description p:last-child {
+    margin: 0 0 20px 0;
+  }
+  .expertise__main__info {
+    padding: 50px 15px;
+    max-width: 100%;
+  }
+  .expertise__main__info__title {
+    margin: 0 0 15px 0;
+  }
+  .expertise__main__info__title h2 {
+    font-size: 25px;
+  }
+  .expertise__main__info__description p {
+    font-size: 16px;
+    margin: 0 0 20px 0;
+    max-width: 100%;
+  }
+  .expertise__main__image {
+    height: auto;
+    padding: 0 0;
+  }
+  .expertise__main__image img {
+    height: auto;
+  }
+  .expertise__main__img-info {
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    position: relative;
+  }
+  .expertise__main__img-info__container__wrapper__slide {
+    padding: 50px 15px 105px 15px;
+  }
+  .expertise__main__img-info__container__wrapper__slide__title {
+    max-width: 100%;
+  }
+  .expertise__main__img-info__container__wrapper__slide__title h2 {
+    font-size: 20px;
+    margin: 0px 0 15px 0;
+  }
+  .expertise__main__img-info__container__wrapper__slide__description {
+    max-width: 100%;
+  }
+  .expertise__main__img-info__container__wrapper__slide__description p {
+    font-size: 16px;
+  }
+  .expertise__main__img-info__arr-prev {
+    top: 79%;
+  }
+  .expertise__main__img-info__arr-prev img {
+    width: 30px;
+    height: 20px;
+  }
+  .expertise__main__img-info__arr-next img {
+    width: 30px;
+    height: 20px;
+  }
+  .projects-home__main__info {
+    max-width: 100%;
+    padding: 50px 15px;
+  }
+  .projects-home__main__info__title {
+    margin: 0 0 25px 0;
+  }
+  .projects-home__main__info__title h2 {
+    font-size: 25px;
+  }
+  .projects-home__main__info__title h2:before {
+    content: '';
+    top: 0%;
+    width: 5px;
+    height: 25px;
+  }
+  .projects-home__main__info__description p {
+    font-size: 16px;
+    max-width: 100%;
+    margin: 0 0 20px 0;
+  }
+  .projects-home__main__image {
+    height: 100%;
+  }
+  .projects-home__main__image img {
+    height: 100%;
+  }
+  .projects-home__main__img-info {
+    bottom: 100%;
+    top: -100%;
+    left: 0;
+    max-width: 100%;
+    position: relative;
+  }
+  .projects-home__main__img-info__container__wrapper__slide {
+    padding: 50px 15px 105px 15px;
+  }
+  .projects-home__main__img-info__container__wrapper__slide__title {
+    margin: 0 0 10px 0;
+  }
+  .projects-home__main__img-info__container__wrapper__slide__title h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+  .projects-home__main__img-info__container__wrapper__slide__title a {
+    font-size: 20px;
+  }
+  .projects-home__main__img-info__container__wrapper__slide__subtitle p {
+    font-size: 18px;
+  }
+  .projects-home__main__img-info__container__wrapper__slide__description {
+    margin-top: 10px;
+  }
+  .projects-home__main__img-info__container__wrapper__slide__description p {
+    font-size: 16px;
+  }
+  .projects-home__main__img-info__arr-prev {
+    top: 79%;
+  }
+  .projects-home__main__img-info__arr-prev img {
+    width: 30px;
+    height: 20px;
+  }
+  .projects-home__main__img-info__arr-next img {
+    width: 30px;
+    height: 20px;
+  }
+  .brokers-home {
+    padding-bottom: 30px;
+  }
+  .brokers-home__main__title-block {
+    padding: 30px 0;
+    max-width: 100%;
+  }
+  .brokers-home__main__title-block__title {
+    margin-left: 0;
+  }
+  .brokers-home__main__title-block__title h2 {
+    font-size: 20px;
+    margin: 0 0 25px 0;
+  }
+  .brokers-home__main__title-block__title p {
+    font-size: 16px;
+  }
+  .brokers-home__main__objects {
+    margin-top: 20px;
+    top: 0;
+  }
+  .brokers-home__main__objects__item {
+    padding: 0 0 30px 0;
+  }
+  .brokers-home__main__objects__item__info {
+    padding: 10px 0 0 0;
+  }
+  .brokers-home__main__objects__item__info h3 {
+    font-size: 16px;
+    margin: 0 0 5px 10px;
+  }
+  .brokers-home__main__objects__item__info h3:before {
+    content: '';
+    top: 12%;
+  }
+  .brokers-home__main__button {
+    margin: 10px auto 0;
+  }
+  .request {
+    padding: 50px 0;
   }
 }

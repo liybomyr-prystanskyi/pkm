@@ -4,22 +4,13 @@
 <head>
 
   <meta charset="utf-8">
-  <!-- <base href="/"> -->
-
   <title></title>
   <meta name="description" content="">
-
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  <!-- Template Basic Images Start -->
   <meta property="og:image" content="path/to/image.jpg">
   <link rel="icon" href="images/favicon/favicon.ico">
-  <!-- Template Basic Images End -->
-
-  <!-- Custom Browsers Color Start -->
   <meta name="theme-color" content="#000">
-  <!-- Custom Browsers Color End -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Quicksand|Roboto&display=swap"
@@ -27,6 +18,8 @@
   <link rel="stylesheet" href="css/main.min.css">
 
 </head>
+
+
 <div id="Load" class="load">
   <div class="load__container">
     <div class="load__animation"></div>
@@ -125,7 +118,7 @@
 
         <div class="home-banner__main__info">
           <div class="container">
-            <div class="home-banner__main__info__title">
+            <div class="home-banner__main__info__title wow fadeInLeftBig">
               <h1>This is a sample headline</h1>
               <p>Please submit your content as soon as possible to your
                 project manager so it can be published to your new website!
@@ -147,10 +140,10 @@
           </div>
           <div class="col-12 col-lg-6 padding-none">
             <div class="about-us__main__info">
-              <div class="about-us__main__info__title">
+              <div class="about-us__main__info__title wow fadeInRightBig">
                 <h2>About Us</h2>
               </div>
-              <div class="about-us__main__info__description">
+              <div class="about-us__main__info__description wow fadeInUpBig">
                 <p>Congratulations on your brand-new website from www.ait.com! Our highly professional and experienced
                   project managers, designers, and developers have worked together to create your high-quality,
                   customized
@@ -161,7 +154,7 @@
                 </p>
               </div>
 
-              <div class="about-us__main__info__button">
+              <div class="about-us__main__info__button wow fadeInUpBig">
                 <a href="#">Read More</a>
               </div>
             </div>
@@ -175,17 +168,17 @@
         <div class="row">
           <div class="col-12 col-lg-6 padding-none">
             <div class="expertise__main__info">
-              <div class="expertise__main__info__title">
+              <div class="expertise__main__info__title wow fadeInLeftBig">
                 <h2>Expertise</h2>
               </div>
-              <div class="expertise__main__info__description">
+              <div class="expertise__main__info__description wow fadeInRightBig">
                 <p>Congratulations on your brand-new website from www.ait.com! Our highly professional and experienced
                   project managers, designers, and developers have worked together to create your high-quality,
                   customized website. You are seeing this text because we have not received your content!
                 </p>
               </div>
 
-              <div class="expertise__main__info__button">
+              <div class="expertise__main__info__button wow fadeInRightBig">
                 <a href="#">Learn More</a>
               </div>
             </div>
@@ -199,10 +192,10 @@
               <div class="swiper-container-2 expertise__main__img-info__container">
                 <div class="swiper-wrapper expertise__main__img-info__container__wrapper">
                   <div class="swiper-slide expertise__main__img-info__container__wrapper__slide">
-                    <div class="expertise__main__img-info__container__wrapper__slide__title">
+                    <div class="expertise__main__img-info__container__wrapper__slide__title wow fadeInRightBig">
                       <h2>Acquisitions</h2>
                     </div>
-                    <div class="expertise__main__img-info__container__wrapper__slide__description">
+                    <div class="expertise__main__img-info__container__wrapper__slide__description wow fadeInUpBig">
                       <p>Please submit your content as soon as possible to your project manager so it can be published
                         to your new website! Do you need help writing your content? AIT offers content writing services
                         for $50 per page.
@@ -211,10 +204,11 @@
                   </div>
 
                   <div class="swiper-slide expertise__main__img-info__container__wrapper__slide">
-                    <div class="expertise__main__img-info__container__wrapper__slide__title">
+                    <div class="expertise__main__img-info__container__wrapper__slide__title wow fadeInRightBig">
                       <h2>Acquisitions</h2>
                     </div>
-                    <div class="expertise__main__img-info__container__wrapper__slide__description">
+
+                    <div class="expertise__main__img-info__container__wrapper__slide__description wow fadeInUpBig">
                       <p>Please submit your content as soon as possible to your project manager so it can be published
                         to your new website! Do you need help writing your content? AIT offers content writing services
                         for $50 per page.
@@ -248,15 +242,15 @@
               <div class="swiper-container-3 projects-home__main__img-info__container">
                 <div class="swiper-wrapper projects-home__main__img-info__container__wrapper">
                   <div class="swiper-slide projects-home__main__img-info__container__wrapper__slide">
-                    <div class="projects-home__main__img-info__container__wrapper__slide__title">
+                    <div class="projects-home__main__img-info__container__wrapper__slide__title wow fadeInRightBig">
                       <h2>The Key at 12th</h2>
                       <a href="#">View</a>
                     </div>
 
-                    <div class="projects-home__main__img-info__container__wrapper__slide__subtitle">
+                    <div class="projects-home__main__img-info__container__wrapper__slide__subtitle wow fadeInLeftBig">
                       <p>Oakland</p>
                     </div>
-                    <div class="projects-home__main__img-info__container__wrapper__slide__description">
+                    <div class="projects-home__main__img-info__container__wrapper__slide__description wow fadeInUpBig">
                       <p>Please submit your content as soon as possible to your project manager so it can be published
                         to your new website! Do you need help writing your content? AIT offers content writing services
                         for $50 per page.
@@ -265,15 +259,15 @@
                   </div>
 
                   <div class="swiper-slide projects-home__main__img-info__container__wrapper__slide">
-                    <div class="projects-home__main__img-info__container__wrapper__slide__title">
+                    <div class="projects-home__main__img-info__container__wrapper__slide__title wow fadeInRightBig">
                       <h2>The Key at 12th</h2>
                       <a href="#">View</a>
                     </div>
 
-                    <div class="projects-home__main__img-info__container__wrapper__slide__subtitle">
+                    <div class="projects-home__main__img-info__container__wrapper__slide__subtitle wow fadeInLeftBig">
                       <p>Oakland</p>
                     </div>
-                    <div class="projects-home__main__img-info__container__wrapper__slide__description">
+                    <div class="projects-home__main__img-info__container__wrapper__slide__description wow fadeInUpBig">
                       <p>Please submit your content as soon as possible to your project manager so it can be published
                         to your new website! Do you need help writing your content? AIT offers content writing services
                         for $50 per page.
@@ -295,23 +289,21 @@
 
           <div class="col-12 col-lg-6 padding-none">
             <div class="projects-home__main__info">
-              <div class="projects-home__main__info__title">
+              <div class="projects-home__main__info__title wow fadeInRightBig">
                 <h2>projects</h2>
               </div>
-              <div class="projects-home__main__info__description">
+              <div class="projects-home__main__info__description wow fadeInLeftBig">
                 <p>Congratulations on your brand-new website from www.ait.com! Our highly professional and experienced
                   project managers, designers, and developers have worked together to create your high-quality,
                   customized website. You are seeing this text because we have not received your content!
                 </p>
               </div>
 
-              <div class="projects-home__main__info__button">
+              <div class="projects-home__main__info__button wow fadeInUpBig">
                 <a href="#">Learn More</a>
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
     </section>
@@ -337,7 +329,7 @@
           <div class="brokers-home__main__objects">
             <div class="row">
               <div class="col-6 col-lg-3">
-                <div class="brokers-home__main__objects__item">
+                <div class="brokers-home__main__objects__item wow fadeInDownBig">
                   <div class="brokers-home__main__objects__item__image">
                     <img src="img/temp/home/katie.png" alt="object">
                   </div>
@@ -349,7 +341,7 @@
               </div>
 
               <div class="col-6 col-lg-3">
-                <div class="brokers-home__main__objects__item">
+                <div class="brokers-home__main__objects__item wow fadeInUpBig">
                   <div class="brokers-home__main__objects__item__image">
                     <img src="img/temp/home/shawn.png" alt="object">
                   </div>
@@ -361,7 +353,7 @@
               </div>
 
               <div class="col-6 col-lg-3">
-                <div class="brokers-home__main__objects__item">
+                <div class="brokers-home__main__objects__item wow fadeInDownBig">
                   <div class="brokers-home__main__objects__item__image">
                     <img src="img/temp/home/matt.png" alt="object">
                   </div>
@@ -371,9 +363,8 @@
                   </div>
                 </div>
               </div>
-
               <div class="col-6 col-lg-3">
-                <div class="brokers-home__main__objects__item">
+                <div class="brokers-home__main__objects__item wow fadeInUpBig">
                   <div class="brokers-home__main__objects__item__image">
                     <img src="img/temp/home/sarah.png" alt="object">
                   </div>
@@ -385,7 +376,6 @@
               </div>
             </div>
           </div>
-
           <div class="brokers-home__main__button">
             <a href=" #">Learn More</a>
           </div>
@@ -397,14 +387,13 @@
     <section class="request">
       <div class="container">
         <div class="request__main">
-          <div class="request__main__title">
+          <div class="request__main__title  wow flipInY">
             <h2>Leave a request</h2>
             <p>Please submit your content as soon as possible to your project manager so it can be published to your new
               website!
             </p>
           </div>
-
-          <div class="request__main__form">
+          <div class="request__main__form  wow flipInX">
             <form action="#">
               <input type="text" placeholder="Name">
               <input type="email" placeholder="Email">

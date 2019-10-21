@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer wow flipInX">
   <div class="container">
     <div class="footer__main">
       <div class="footer__main__menu">

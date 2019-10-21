@@ -69,7 +69,7 @@ var gulp = require('gulp'),
 // Local Server
 gulp.task('browser-sync', function () {
 	browserSync({
-		proxy: 'purplekey',
+		proxy: 'pkm',
 		notify: false,
 		// open: false,
 		// online: false, // Work Offline Without Internet Connection
