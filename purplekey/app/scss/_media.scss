@@ -1,0 +1,490 @@
+@import "vars";
+
+@media screen and (max-width:576px) {
+
+  body {
+    overflow-x:hidden ;
+  }
+  .header-main {
+
+    nav {
+      min-height: auto;
+
+      .navbar-brand {
+        img {
+          max-width: 80px;
+        }
+      }
+
+      .menu-header {
+
+
+        ul {
+
+
+          li {
+
+
+            a {}
+          }
+        }
+
+        .left {
+
+
+          .login-button {
+
+
+            a {}
+          }
+        }
+      }
+    }
+  }
+
+  .home-banner {
+
+
+    &__main {
+
+
+      &__swiper {
+
+
+        &__wrapper {
+
+
+          &__item {
+
+
+            img {
+              width: 100%;
+              height: auto;
+              min-height: 200px;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+
+      &__info {
+
+
+        &__title {
+
+
+          h1 {
+            font-size: 16px;
+
+            &:before {
+              content: "";
+              top: 30px;
+              height: 2px;
+            }
+          }
+
+          p {
+            margin: 30px auto 0;
+          }
+        }
+      }
+    }
+  }
+
+  .about-us {
+
+
+    &__main {
+
+
+
+      &__image {
+        height: auto;
+
+        img {
+          width: auto;
+          height: auto;
+          max-width: 100%;
+          min-height: 154px;
+        }
+      }
+
+      &__info {
+        padding: 25px 30px;
+
+        &__title {
+          margin: 0 0 15px 0;
+
+          h2 {
+            font-size: 20px;
+
+            &:before {
+              content: '';
+              width: 6px;
+              height: 25px;
+              top: 0;
+            }
+          }
+        }
+
+        &__description {
+
+
+          p {
+            font-size: 14px;
+            max-width: 100%;
+            margin: 0 0 10px 0;
+
+            &:last-child {
+              margin: 0 0 20px 0;
+            }
+          }
+        }
+
+        &__button {
+          min-height: 40px;
+          max-width: 170px;
+
+          a {
+            font-size: 14px;
+            min-height: 40px;
+          }
+        }
+      }
+    }
+  }
+
+
+  .expertise {
+
+
+    &__main {
+
+
+      &__info {
+        padding: 25px 30px;
+        max-width: 100%;
+
+        &__title {
+          margin: 0 0 15px 0;
+
+          h2 {
+            font-size: 20px;
+
+            &:before {
+              content: '';
+
+            }
+          }
+        }
+
+        &__description {
+
+
+          p {
+            font-size: 14px;
+            margin: 0 0 20px 0;
+          }
+        }
+
+        &__button {
+          min-height: 40px;
+          max-width: 170px;
+
+          a {
+            font-size: 14px;
+            min-height: 40px;
+          }
+        }
+      }
+
+      &__image {
+        height: auto;
+        padding: 0 30px;
+
+        img {
+          height: 150px;
+        }
+      }
+
+      &__img-info {
+        height: auto;
+        position: relative;
+        background-color: #752a95;
+        max-width: 100%;
+        width: 100%;
+        overflow: hidden;
+        top: 0;
+        right: 0;
+        padding: 0 30px;
+
+        &__container {
+
+          &__wrapper {
+
+            &__slide {
+              padding:0;
+
+              &__title {
+
+
+                h2 {}
+              }
+
+              &__description {
+
+
+                p {}
+              }
+            }
+          }
+        }
+
+        &__arr-prev {
+
+
+
+          img {}
+        }
+
+        &__arr-next {
+
+
+          img {}
+        }
+      }
+    }
+  }
+
+
+  .projects-home {
+
+
+    &__main {
+
+
+      &__info {
+        padding: 30px 30px;
+
+        &__title {
+          margin: 0 0 25px 0;
+
+          h2 {
+            font-size: 20px;
+
+
+            &:before {
+              content: '';
+              top: 0%;
+              width: 5px;
+              height: 25px;
+            }
+          }
+        }
+
+        &__description {
+
+
+          p {
+            font-size: 16px;
+            max-width: 100%;
+            margin: 0 0 20px 0;
+          }
+        }
+
+        &__button {
+          min-height: 40px;
+          max-width: 170px;
+          a {
+            min-height: 40px;
+            font-size: 14px;
+          }
+        }
+      }
+
+      &__image {
+        height: auto;
+        max-height: 150px;
+
+        img {
+          height: auto;
+        }
+      }
+
+      &__img-info {
+        top: 0;
+        left: 0;
+        max-width: 100%;
+        position: relative;
+
+
+        &__container {
+
+          &__wrapper {
+
+            &__slide {
+              padding: 20px 15px 105px 15px;
+
+              &__title {
+
+
+                h2 {}
+
+                a {}
+              }
+
+              &__subtitle {
+
+
+                p {
+
+
+                  &:before {
+                    content: '';
+
+                  }
+                }
+              }
+
+              &__description {
+
+
+                p {}
+              }
+            }
+          }
+        }
+
+        &__arr-prev {
+
+
+          img {}
+        }
+
+        &__arr-next {
+
+
+          img {}
+        }
+      }
+    }
+  }
+
+  .brokers-home {
+
+    padding-bottom: 30px;
+  
+    &__main {
+
+  
+      &__title-block {
+        padding: 30px 0;
+        max-width: 100%;
+
+        &__title {
+          margin-left: 0;
+  
+          h2 {
+            font-size: 20px;
+            margin: 0 0 25px 0;
+          }
+  
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+  
+      &__objects {
+        margin-top: 20px;
+        top: 0;
+  
+        &__item {
+     
+  
+          &__image {
+   
+  
+            img {
+ 
+            }
+          }
+  
+          &__info {
+
+  
+            h3 {
+              font-size: 16px;
+  
+              &:before {
+                content: '';
+              }
+            }
+  
+            p {
+            }
+          }
+        }
+      }
+  
+      &__button {
+  
+        a {
+     
+        }
+      }
+    }
+  } 
+
+  .footer {
+  
+  
+    &__main {
+     
+  
+      &__menu {
+        
+  
+        ul {
+         flex-direction: column;
+  
+          li {
+            
+            
+            a {
+            
+            }
+          }
+        }
+      }
+      &__logo {
+     
+        a {
+          img {
+        
+          }
+        }
+      }
+      &__by {
+     
+  
+        a {
+       
+          &:last-child {
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+}
+
+@media screen and (min-width:576.99px) and (max-width:768px) {}
+
+@media screen and (min-width:768.99px) and (max-width:992px) {}
+
+@media screen and (min-width:992.99px) and (max-width:1200px) {}

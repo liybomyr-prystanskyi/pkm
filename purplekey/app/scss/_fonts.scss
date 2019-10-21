@@ -1,0 +1,37 @@
+// @import "_mixins/font-face";
+
+// @include font-face("MyriadPro", "./fonts/MyriadPro/MyriadProRegular");
+// @include font-face("MyriadProBold", "./fonts/MyriadProBold/MyriadProBold");
+// @include font-face("MyriadProBoldItalic", "./fonts/MyriadProBoldItalic/MyriadProBoldItalic");
+// @font-face {
+// 	font-family: "MyriadPro";
+// 	src: url("../fonts/MyriadProBold/MyriadProBold.eot");
+// 	src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+// 	url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"),
+// 	url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+// 	font-style: normal;
+// 	font-weight: 700;
+// }
+
+// /* font-family: "MyriadProBoldItalic"; */
+// @font-face {
+// 	font-family: "MyriadPro";
+// 	src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot");
+// 	src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot?#iefix")format("embedded-opentype"),
+// 	url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.woff") format("woff"),
+// 	url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.ttf") format("truetype");
+// 	font-style: italic;
+// 	font-weight: 700;
+// }
+
+// /* font-family: "MyriadProRegular"; */
+// @font-face {
+// 	font-family: "MyriadPro";
+// 	src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+// 	src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+// 	url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+// 	url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+// 	font-style: normal;
+// 	font-weight: normal;
+// }
+
