@@ -26,7 +26,6 @@
           </li>
         </ul>
       </div>
-
       <div class="footer__main__logo">
         <a href="#">
           <img src="img/temp/home/footer-logo.png" alt="footer-logo">
@@ -39,7 +38,7 @@
     </div>
   </div>
 </footer>
-
+<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
 <script src="//cdn.jsdelivr.net/npm/afterglowplayer@1.x"></script>
 <script src="libs/jquery/dist/jquery.min.js"></script>
 <script src="js/scripts.min.js"></script>

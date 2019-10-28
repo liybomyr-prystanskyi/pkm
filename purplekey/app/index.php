@@ -19,7 +19,6 @@
 
 </head>
 
-
 <div id="Load" class="load">
   <div class="load__container">
     <div class="load__animation"></div>
@@ -34,82 +33,11 @@
       <div class="home-banner__main">
         <div class="swiper-container home-banner__main__swiper">
           <div class="swiper-wrapper home-banner__main__swiper__wrapper">
-            <div class="row swiper-slide w-100 m-0">
-              <div class="col-6 col-lg-6 padding-none">
-                <div class="home-banner__main__swiper__wrapper__item">
-                  <img src="img/temp/home/banner-1.png" alt="banner-slide-1">
-                </div>
-              </div>
-
-              <div class="col-6 col-lg-6 padding-none">
-                <div class="home-banner__main__swiper__wrapper__item">
-                  <img src="img/temp/home/banner-2.png" alt="banner-slide-2">
-                </div>
-              </div>
-
-              <div class="col-6 col-lg-6 padding-none">
-                <div class="home-banner__main__swiper__wrapper__item">
-                  <img src="img/temp/home/banner-3.png" alt="banner-slide-3">
-                </div>
-              </div>
-
-              <div class="col-6 col-lg-6 padding-none">
-                <div class="home-banner__main__swiper__wrapper__item">
-                  <img src="img/temp/home/banner-4.png" alt="banner-slide-4">
-                </div>
-              </div>
+            <div class="swiper-slide home-banner__main__swiper__wrapper__slide" style="background-image: url(img/temp/home/home-banner.png);">
             </div>
-
-            <div class="row swiper-slide w-100 m-0">
-              <div class="col-6 col-lg-6 padding-none">
-                <div class="home-banner__main__swiper__wrapper__item">
-                  <img src="img/temp/home/banner-1.png" alt="banner-slide-1">
-                </div>
-              </div>
-
-              <div class="col-6 col-lg-6 padding-none">
-                <div class="home-banner__main__swiper__wrapper__item">
-                  <img src="img/temp/home/banner-2.png" alt="banner-slide-2">
-                </div>
-              </div>
-
-              <div class="col-6 col-lg-6 padding-none">
-                <div class="home-banner__main__swiper__wrapper__item">
-                  <img src="img/temp/home/banner-3.png" alt="banner-slide-3">
-                </div>
-              </div>
-
-              <div class="col-6 col-lg-6 padding-none">
-                <div class="home-banner__main__swiper__wrapper__item">
-                  <img src="img/temp/home/banner-4.png" alt="banner-slide-4">
-                </div>
-              </div>
+            <div class="swiper-slide home-banner__main__swiper__wrapper__slide" style="background-image: url(img/temp/home/home-banner.png);">
             </div>
-
-            <div class="row swiper-slide w-100 m-0">
-              <div class="col-6 col-lg-6 padding-none">
-                <div class="home-banner__main__swiper__wrapper__item">
-                  <img src="img/temp/home/banner-1.png" alt="banner-slide-1">
-                </div>
-              </div>
-
-              <div class="col-6 col-lg-6 padding-none">
-                <div class="home-banner__main__swiper__wrapper__item">
-                  <img src="img/temp/home/banner-2.png" alt="banner-slide-2">
-                </div>
-              </div>
-
-              <div class="col-6 col-lg-6 padding-none">
-                <div class="home-banner__main__swiper__wrapper__item">
-                  <img src="img/temp/home/banner-3.png" alt="banner-slide-3">
-                </div>
-              </div>
-
-              <div class="col-6 col-lg-6 padding-none">
-                <div class="home-banner__main__swiper__wrapper__item">
-                  <img src="img/temp/home/banner-4.png" alt="banner-slide-4">
-                </div>
-              </div>
+            <div class="swiper-slide home-banner__main__swiper__wrapper__slide" style="background-image: url(img/temp/home/home-banner.png);">
             </div>
 
           </div>
@@ -246,7 +174,6 @@
                       <h2>The Key at 12th</h2>
                       <a href="#">View</a>
                     </div>
-
                     <div class="projects-home__main__img-info__container__wrapper__slide__subtitle wow fadeInLeftBig">
                       <p>Oakland</p>
                     </div>
@@ -257,13 +184,11 @@
                       </p>
                     </div>
                   </div>
-
                   <div class="swiper-slide projects-home__main__img-info__container__wrapper__slide">
                     <div class="projects-home__main__img-info__container__wrapper__slide__title wow fadeInRightBig">
                       <h2>The Key at 12th</h2>
                       <a href="#">View</a>
                     </div>
-
                     <div class="projects-home__main__img-info__container__wrapper__slide__subtitle wow fadeInLeftBig">
                       <p>Oakland</p>
                     </div>
@@ -276,17 +201,14 @@
                   </div>
                 </div>
               </div>
-
               <div class="swiper-button-prev-projects projects-home__main__img-info__arr-prev">
                 <img src="img/temp/home/arrow-next.png" alt="next">
               </div>
               <div class="swiper-button-next-projects projects-home__main__img-info__arr-next">
                 <img src="img/temp/home/arrow-next.png" alt="next">
               </div>
-
             </div>
           </div>
-
           <div class="col-12 col-lg-6 padding-none">
             <div class="projects-home__main__info">
               <div class="projects-home__main__info__title wow fadeInRightBig">
@@ -298,7 +220,6 @@
                   customized website. You are seeing this text because we have not received your content!
                 </p>
               </div>
-
               <div class="projects-home__main__info__button wow fadeInUpBig">
                 <a href="#">Learn More</a>
               </div>
@@ -324,7 +245,6 @@
             </div>
           </div>
         </div>
-
         <div class="container">
           <div class="brokers-home__main__objects">
             <div class="row">
@@ -339,7 +259,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="col-6 col-lg-3">
                 <div class="brokers-home__main__objects__item wow fadeInUpBig">
                   <div class="brokers-home__main__objects__item__image">
@@ -351,7 +270,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="col-6 col-lg-3">
                 <div class="brokers-home__main__objects__item wow fadeInDownBig">
                   <div class="brokers-home__main__objects__item__image">
@@ -380,7 +298,6 @@
             <a href=" #">Learn More</a>
           </div>
         </div>
-
       </div>
     </section>
 
